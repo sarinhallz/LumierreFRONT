@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Jost", sans-serif;
+}
+
+.container{
+    display: flex;
+    width: 100%;
+}
+
+.container-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #022859;
+    max-width: 30%;
+    height: 100vh;
+    color: #FFF;
+    gap: 7%;
+}
+
+.logo img{
+    display: flex;
+    margin: 15% 0 15% 0;
+}
+
+.title{
+    width: 60%;
+    text-align: center;
+}
+
+.title h1{
+    font-size: 1.7vw;
+}
+
+.options{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.options a{
+    text-decoration: none;
+    font-size: 1.4vw;
+    text-decoration: none;
+    color: #FFF;
+    margin-bottom: 12%;
+    display: flex;
+    align-items: center;
+}
+
+.options img{
+    margin-right: 5%;
+}
+
+.content{
+    background: #021D40;
+    max-width: 100vh;
+    height: 100vh;
+}
