@@ -8,6 +8,56 @@
     <link rel="stylesheet" href="../css/dashboard.css">
 </head>
 <body>
+
+    <div class="voltar"> 
+        <a href="listUser.html"><img class="icone" src="../images/voltar.svg" alt=""></a>  
+    </div>  
+
+    <div class="container-editUs">
+        <div class="content-table">
+            <table class="table-users tb-edt">
+                <tr class="list-title">
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Email</th>
+                    <th>Senha</th>
+                    <th>Data de Nascimento</th>
+                    <th>Permissão</th>
+                </tr>
+                <tr class="users">
+                    <td>1</td>
+                    <td>Sarah Christine</td>
+                    <td>sarinhalllz@gmail.com</td>
+                    <td>sasa123</td>
+                    <td>25-04-2007</td>
+                    <td>admin</td>  
+                </tr>
+            </table>
+        </div>
+        <div class="form edt-frm">
+            <form action="">
+                <label for="" >Nome:</label>
+                <input type="text" name="title" id="title" placeholder="Digite seu nome">
     
+                <label for="">E-mail:</label>
+                <input type="email" name="email" id="email" placeholder="Digite seu e-mail">
+    
+                <label for="">Senha:</label>
+                <input type="text" name="senha" id="senha" placeholder="Digite sua senha">
+                
+                <label for="">Nível de permissão:</label>
+                <select name="category" id="category">
+                    <option value="" disabled selected hidden>Selecione o nível de permissão</option>
+                    <option value="adm">Administrador</option>
+                    <option value="client">Cliente</option>
+                </select>
+    
+                <label for="">Data de nascimento:</label>
+                <input type="date" name="date" id="date">
+                 
+                <button id="btn-add" type="sumbit">Adicionar</button>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
