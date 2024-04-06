@@ -96,35 +96,6 @@ function createSlideClones() {
     slideItems = document.querySelectorAll('[data-slide="item"]')
 }
 
-function onMouseDown(event, index) {
-    const slideItem = event.currentTarget
-    state.startingPoint = event.clientX
-    state.currentPoint = event.clientX - state.savedPosition
-    state.currentSlideIndex = index
-    slideList.style.transition = 'none'
-    slideItem.addEventListener('mousemove', onMouseMove)
-}
-
-function onMouseMove(event) {
-    state.movement = event.clientX - state.startingPoint
-    const position = event.clientX - state.currentPoint
-    translateSlide({ position })
-}
-
-function onMouseUp(event) {
-    const pointsToMove = event.type.includes('touch') ? 50 : 150
-    if(state.movement < -pointsToMove) {
-        nextSlide()
-    } else if (state.movement > pointsToMove) {
-        previousSlide()
-    } else {
-        setVisibleSlide({ index: state.currentSlideIndex, animate: true})
-    }
-    state.movement = 0
-    const slideItem = event.currentTarget
-    slideItem.removeEventListener('mousemove', onMouseMove)
-}
-
 function onTouchStart(event, index) {
     event.clientX = event.touches[0].clientX
     onMouseDown(event, index)

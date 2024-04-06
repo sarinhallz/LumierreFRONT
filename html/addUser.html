@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+<body>
+    <main>
+        <section class="container">
+            <div class="container-menu">
+                <div class="logo">
+                    <img src="../images/logo.svg" alt="">
+                </div>
+                <div class="title">
+                    <h1>Selecione uma das opções abaixo:</h1>
+                </div>
+                <div class="options">
+                    <a href="addMovie.html"><img src="../images/icon-filme.svg" alt="">Adicionar filme</a>
+                    <a href="listMovie.html" id="list-movie"><img src="../images/icon-busca.svg" alt="">Listar filmes</a>
+                    <a href="addUser.html" id="add-user"><img src="../images/icon-user.svg" alt="">Adicionar usuário</a>
+                    <a href="listUser.html" id="list-user"><img src="../images/icon-buser.svg" alt="">Listar usuários</a>
+                    <a href="home.html"><img src="../images/icon-sair.svg" alt="">Sair</a>
+                </div>
+            </div>
+            <div class="add">
+                <div class="titleadd">
+                    <div class="image">
+                    <img src="../images/icon-user.svg" alt="" id="img-title">
+                </div>
+                <div class="title-add">
+                    <h1>Adicionar usuário</h1>
+                </div>
+                </div>
+                
+                <div class="form">
+                    <form action="">
+                        <label for="" >Nome:</label>
+                        <input type="text" name="title" id="title" placeholder="Digite seu nome">
+          
+                        <label for="">E-mail:</label>
+                        <input type="email" name="email" id="email" placeholder="Digite seu e-mail">
+          
+                        <label for="">Senha:</label>
+                        <input type="text" name="senha" id="senha" placeholder="Digite sua senha">
+                        
+                        <label for="">Nível de permissão:</label>
+                        <select name="category" id="category">
+                            <option value="" disabled selected hidden>Selecione o nível de permissão</option>
+                            <option value="adm">Administrador</option>
+                            <option value="client">Cliente</option>
+                        </select>
+          
+                        <label for="">Data de nascimento:</label>
+                        <input type="date" name="date" id="date">
+                         
+                        <button id="btn-add" type="sumbit">Adicionar</button>
+                    </form>
+                </div>
+                </div>
+        </section>
+
+
+    </main>
+</body>
+</html>

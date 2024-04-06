@@ -4,7 +4,7 @@ const dad = document.getElementById("dadElement");
 const addMovie = document.getElementById("add-movie");
 
 addMovie.addEventListener("click", () => {
-  const content = `
+    const content = `
         <div class="add">
         <div class="titleadd">
             <div class="image">
@@ -64,7 +64,7 @@ addMovie.addEventListener("click", () => {
         </div>
     `;
 
-  dad.innerHTML = content;
+    dad.innerHTML = content;
 });
 
 /* --------------------------------------------------------SEPARAÇÃO------------------------------------------------------------------ */
@@ -72,9 +72,10 @@ addMovie.addEventListener("click", () => {
 const listMovie = document.getElementById("list-movie");
 
 listMovie.addEventListener("click", () => {
-  const content = ``;
+    const content = `
+ `;
 
-  dad.innerHTML = content;
+    dad.innerHTML = content;
 });
 
 /* --------------------------------------------------------SEPARAÇÃO------------------------------------------------------------------ */
@@ -83,7 +84,7 @@ const addUSer = document.getElementById("add-user");
 
 // Adicionando Usuario
 addUSer.addEventListener("click", () => {
-  const content = `
+    const content = `
       <div class="add">
       <div class="titleadd">
           <div class="image">
@@ -121,7 +122,7 @@ addUSer.addEventListener("click", () => {
       </div>
     `;
 
-  dad.innerHTML = content;
+    dad.innerHTML = content;
 });
 
 /* --------------------------------------------------------SEPARAÇÃO------------------------------------------------------------------ */
@@ -129,17 +130,34 @@ addUSer.addEventListener("click", () => {
 const listUser = document.getElementById("list-user");
 
 listUser.addEventListener("click", () => {
-  const content = ``;
+    const content = `                <div class="list-users">
+      <table class="table-users">
+          <tr class="list-title">
+              <th>ID</th>
+              <th>Nome</th>
+              <th>Email</th>
+              <th>Senha</th>
+              <th>Data de Nascimento</th>
+              <th>Permissão</th>
+              <th>Editar</th>
+              <th>Deletar</th>
+          </tr>
+          <tr class="users">
+              <span></span>
+              <td>1</td>
+              <td>Sarah Christine</td>
+              <td>sarinhalllz@gmail.com</td>
+              <td>sasa123</td>
+              <td>25-04-2007</td>
+              <td>admin</td>
+              <td><button class="btn-edit">Editar</button></td>
+              <td><button class="btn-delete">Deletar</button></td>
+          </tr>
+      </table>
+    </div>
+    `;
 
-  dad.innerHTML = content;
+    dad.innerHTML = content;
 });
 
 /* --------------------------------------------------------SEPARAÇÃO------------------------------------------------------------------ */
-
-const listRent = document.getElementById("list-rent");
-
-listRent.addEventListener("click", () => {
-  const content = ``;
-
-  dad.innerHTML = content;
-});
